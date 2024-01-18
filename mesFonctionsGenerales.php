@@ -43,8 +43,33 @@ function ecritRequeteSQL($uneChaine) {
 	fclose($handle);
 }
 
+<?php
 
+<?php
+
+function ExtraireCommune($ligne, &$commune, &$cp) {
+    // Séparation des champs de la ligne
+    $champs = explode(';', $ligne);
+
+    // Vérification du nombre de champs
+    if (count($champs) >= 4) {
+        // Extraction du nom de la commune et du code postal
+        $commune = $champs[1];
+        $cp = $champs[2];
+
+        // Retourne true pour indiquer le succès
+        return true;
+    } else {
+        // Retourne false si le nombre de champs est incorrect
+        return false;
+    }
+}
 
 ?>
+
+
+
+
+
 
 
