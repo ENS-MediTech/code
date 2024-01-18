@@ -53,7 +53,7 @@ if (file_exists($fichier_ville_cp)) {
 }
 //$id= rand (1, $tabloNomFamille[2]); mini code de Imaaaane
 // Insertion dans la table ETUDIANT du nième nom de famille et du pième prénom 
-$sql="INSERT INTO visiteur(VIS_ID, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILLE, VIS_DATE_EMBAUCHE) VALUES ('$id', '$tabloNomFamille', '$tabloPrenom', NULL, NULL, NULL, NULL)";
+$sql="INSERT INTO visiteur(VIS_ID, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILLE, VIS_DATE_EMBAUCHE) VALUES ('$id', '$tabloNomFamille[$n]', '$tabloPrenom[$p]', NULL, NULL, NULL, NULL)";
 
 echo "sql : ".$sql."<br />";
 $result = $cnxBDD->query($sql)
