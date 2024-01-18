@@ -1,0 +1,2 @@
+commande pour copier les donner depuis le terminal de visual basic
+scp -r -P 12302 <<emplacemnt du fichier>> AUTRET@lab.sio-estran.fr:/var/www/html/AUTRET/APGSB
