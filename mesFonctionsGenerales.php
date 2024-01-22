@@ -43,9 +43,7 @@ function ecritRequeteSQL($uneChaine) {
 	fclose($handle);
 }
 
-<?php
 
-<?php
 
 function ExtraireCommune($ligne, &$commune, &$cp) {
     // Séparation des champs de la ligne
