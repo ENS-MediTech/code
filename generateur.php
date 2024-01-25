@@ -12,6 +12,10 @@ $tabloNomFamille = file($NomFichier);
 $NomFichier = 'garcon.txt';
 $tabloPrenom = file($NomFichier);
 
+
+$NomFichier = 'codeville.txt';
+$tabloVille = file($NomFichier);
+
 // rand(x, y) fournit un nombre au hasard entre x et y
 $n = rand(1, sizeof($tabloNomFamille)); // $n contient un rang au hasard
 $p = rand(1, sizeof($tabloPrenom));     // $p contient un rang au hasard
