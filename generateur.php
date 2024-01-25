@@ -5,7 +5,6 @@ $cnxBDD = new mysqli ('localhost', 'root', 'Iroise29' ,'MediTech', 3306);;
 // les noms sont dans le fichier nom.txt
 // debut booucle garcon
 $i = 1;
-while ($i <= 10) {
 $NomFichier = 'nom.txt';
 $tabloNomFamille = file($NomFichier);
 
@@ -15,6 +14,8 @@ $tabloPrenom= file($NomFichier);
     //villes + code postal
 $NomFichier = 'codeville.txt';
 $tabloVille = file($NomFichier);
+while ($i <= 10) {
+
 
 // rand(x, y) fournit un nombre au hasard entre x et y
 $n = rand(1, sizeof($tabloNomFamille)); // $n contient un rang au hasard
@@ -51,17 +52,6 @@ $i++;
 //boucle fille
 $i = 1;
 while ($i <= 10) {
-$NomFichier = 'nom.txt';
-$tabloNomFamille = file($NomFichier);
-
-// les prénoms garçon sont dans le fichier garcon.txt
-$NomFichier = 'fille.txt';
-$tabloPrenomF = file($NomFichier);
-
-
-$NomFichier = 'codeville.txt';
-$tabloVille = file($NomFichier);
-
 // rand(x, y) fournit un nombre au hasard entre x et y
 $n = rand(1, sizeof($tabloNomFamille)); // $n contient un rang au hasard
 $p = rand(1, sizeof($tabloPrenomF));// $p contient un rang au hasard
