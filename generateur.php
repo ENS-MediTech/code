@@ -26,6 +26,10 @@ $tabloPrenomG = file($NomFichier);
 $NomFichier = 'codeville.txt';
 $tabloVille = file($NomFichier);
 
+// Adresse
+$NomFichier = 'adresse.txt';
+$tabloAdresse = file($NomFichier);
+
 // Boucle garçon
 $i = 1;
 while ($i <= 10) {
@@ -34,6 +38,7 @@ $idG = "";
     $n = rand(0, sizeof($tabloNomFamille) - 1);
     $p = rand(0, sizeof($tabloPrenomG) - 1);
     $v = rand(0, sizeof($tabloVille) - 1);
+    $D = rand(0, count($tabloAdresse)-1);
     $idGG = substr($tabloNomFamille[$n], 0, 2);
     $idG = substr($tabloPrenomG[$p], 0, 2);
 
@@ -45,7 +50,7 @@ $idG = "";
         $nomCommune = $data[1];
         $codePostal = $data[2];
 
-        $sql = "INSERT INTO visiteur(VIS_ID, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILLE, VIS_DATE_EMBAUCHE) VALUES ('$idGG$idG', '$tabloNomFamille[$n]', '$tabloPrenomG[$p]', NULL, '$codePostal', '$nomCommune', NULL)";
+        $sql = "INSERT INTO visiteur(VIS_ID, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILLE, VIS_DATE_EMBAUCHE) VALUES ('$idGG$idG', '$tabloNomFamille[$n]', '$tabloPrenomG[$p]', '$tabloAdresse[$D]', '$codePostal', '$nomCommune', NULL)";
 
         echo "sql : " . $sql . "<br />";
         $result = $cnxBDD->query($sql) or die("Requête invalide : " . $sql);
@@ -64,6 +69,7 @@ while ($i <= 10) {
     $n = rand(0, sizeof($tabloNomFamille) - 1);
     $p = rand(0, sizeof($tabloPrenomF) - 1);
     $v = rand(0, sizeof($tabloVille) - 1);
+    $D = rand(0, count($tabloAdresse)-1);
     $idFF = substr($tabloNomFamille[$n], 0, 2);
     $idF = substr($tabloPrenomF[$p], 0, 2);
 
@@ -75,7 +81,7 @@ while ($i <= 10) {
         $nomCommune = $data[1];
         $codePostal = $data[2];
 
-        $sql = "INSERT INTO visiteur(VIS_ID, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILLE, VIS_DATE_EMBAUCHE) VALUES ('$id$idF', '$tabloNomFamille[$n]', '$tabloPrenomF[$p]', NULL, '$codePostal', '$nomCommune', NULL)";
+        $sql = "INSERT INTO visiteur(VIS_ID, VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_CP, VIS_VILLE, VIS_DATE_EMBAUCHE) VALUES ('$id$idF', '$tabloNomFamille[$n]', '$tabloPrenomF[$p]', '$tabloAdresse[$D]', '$codePostal', '$nomCommune', NULL)";
 
         echo "sql : " . $sql . "<br />";
         $result = $cnxBDD->query($sql) or die("Requête invalide : " . $sql);
