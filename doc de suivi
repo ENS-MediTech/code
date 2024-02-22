@@ -1,16 +1,18 @@
 18/01/2024
-- réglage de la base de données
-- étude du dossier GSB
-- test de la table visiteur avec le générateur
-- début du développement des interaces IHM
+- Réglage de la base de données
+- Étude du dossier GSB
+- Test de la table visiteur avec le générateur
+- Début du développement des interaces IHM
+- Création de la documentation générale
 
 25/01/2024
-- Ajout des derniers détails sur la base
-- création d'une interface IHM
+- Ajouts des derniers détails principaux sur la base de données
+- Création d'une interface IHM
 
 01/02/2024
 - Travail sur les IHM
 - Début de la gestion de l'insert dans la base de données 
+- Ajouts d'éléments à la documentation générale
 
 08/02/2024
 - Modification et ajout d'une table dans la base de données
@@ -18,4 +20,30 @@
 
 15/02/2024
 - Début de création des IHM principales
-- Gestion du php
+- Ajout de la gestion des actions possibles en php (Ajouter, Modifier, Supprimer)
+
+22/02/2024
+- Suite de la création des IHM principales
+- Suite de la gestion des actions possibles en php (Ajouter, Modifier, Supprimer)
+- Réglages sur la base de données
+- 
+- Ajouts d'éléments à la documentation générale
+
+
+29/02/24
+- Possibles jours d'affilées en plus
+
+07/03/24
+
+
+14/03/24
+
+
+21/03/24
+
+
+28/03/24
+
+
+04/04/24
+
