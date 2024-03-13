@@ -1,7 +1,7 @@
 <?php
 $serveur = "localhost";
-$utilisateur = "user";
-$mot_de_passe = "root";
+$utilisateur = "root";
+$mot_de_passe = "Iroise29";
 $nom_base_de_donnees = "MediTech";
 $nom_table = "visiteur";
 $numero_port = 3306;
