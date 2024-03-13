@@ -1,8 +1,8 @@
 <?php
 // Informations de connexion à la base de données
 $serveur = "localhost";
-$utilisateur = "user";
-$mot_de_passe = "root";
+$utilisateur = "root";
+$mot_de_passe = "Iroise29";
 $nom_base_de_donnees = "Meditech";
 $nom_table = "visiteur";
 $numero_port = 3306; // Port MySQL par défaut
