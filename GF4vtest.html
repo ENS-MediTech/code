@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestion des Frais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color : #77aadd;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 8px;
+            margin-left: 0px;
+        }
+
+        .backg {
+            background-color : #ffffff;
+            padding-bottom: 75px;
+            margin-bottom: 58px;
+        }
+ 
+
+        .container {
+            width: 80%;
+            margin-left: 3px;
+            white-space:nowrap;
+        }
+
+        .title {
+            text-align: left;
+            font-size: 3em;
+            font-weight: bold;
+            color: #77aadd;
+            margin-left: 3px;
+  
+        }
+        .section {
+            margin-bottom: 1em;
+            margin-left: 3px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: white;
+            font-size: 2em;
+        }
+        .input-field {
+            width: 10%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+        }
+
+        .input-field2 {
+            width: 10%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+        }
+
+        .submit-button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 2em auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            text-align: right;
+        }
+        
+        .section-title2 {
+            font-size: 1em;
+            color: white;
+            white-space:nowrap;
+        }
+
+        .nmbox {
+         color: white;
+         text-align: left;
+ 
+        }
+        .blocc1 {
+            margin-left: 140px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="backg">
+            <div class="title">Gestion des Frais</div>
+        </div>
+    </div>
+         <div class="backg2">
+         <div class="container">
+         <div class="section">
+         <div class="section-title">Saisie</div>
+    <br>
+        <div class="section-title2">PERIODE <br/> D'ENGAGEMNT : </div>
+        <div class="blocc1">
+            onkeydown="if(event.keyCode==32) return false;
+            <label for="month" class="nmbox">Mois (2 chiffres)</label>
+            <input type="text" id="month" name="month" class="input-field" onkeydown="if(event.keyCode==32) return false;">
+            <label for="year" class="nmbox">Année (4 chiffres)</label>
+            <input type="text" id="year" name="year" class="input-field" onkeydown="if(event.keyCode==32) return false;">
+         </div>
+         </div>
+        </div>
+         </div>
+        <div class="section">
+            <div class="section-title">Frais au forfait</div>
+            <label for="meal" class="nmbox">Repas midi</label>
+            <input type="text" id="meal" name="meal" class="input-field2">
+            <br>
+            <label for="nights" class="nmbox">Nuitées</label>
+            <input type="text" id="nights" name="nights" class="input-field2">
+            <br>
+            <label for="step" class="nmbox">Étape</label>
+            <input type="text" id="step" name="step" class="input-field2">
+            <br>
+            <label for="km" class="nmbox">Km</label>
+            <input type="text" id="km" name="km" class="input-field2">
+        </div>
+            </div>
+        </body>
+        </html>
+        
+
+        <button class="submit-button">Soumettre la requête</button>
+    </div>
+</body>
+</div>
+</html>

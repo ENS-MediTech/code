@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Ajoutez d'autres styles ici si nécessaire */
+        }
+
+        .input-field2 {
+            /* Styles spécifiques pour vos champs de saisie */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="section-title">Frais au forfait</div>
+            <label for="meal">Repas midi</label>
+            <input type="text" id="meal" name="meal" class="input-field2">
+            <br>
+            <label for="nights">Nuitées</label>
+            <input type="text" id="nights" name="nights" class="input-field2">
+            <br>
+            <label for="step">Étape</label>
+            <input type="text" id="step" name="step" class="input-field2">
+            <br>
+            <label for="km">Km</label>
+            <input type="text" id="km" name="km" class="input-field2">
+        </div>
+    </div>
+</body>
+</html>
