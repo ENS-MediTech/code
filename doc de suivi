@@ -26,18 +26,10 @@
 - Suite de la création des IHM principales
 - Suite de la gestion des actions possibles en php (Ajouter, Modifier, Supprimer)
 - Réglages sur la base de données
-- 
 - Ajouts d'éléments à la documentation générale
 
-
-29/02/24
-- Possibles jours d'affilées en plus
-
-07/03/24
-
-
 14/03/24
-
+- Tests des actions PHP (Ajouter, Modifier, Supprimer) des utilisateurs
 
 21/03/24
 
