@@ -1,41 +1,29 @@
 <?php
+$cnxBDD = new mysqli('localhost', 'root', 'Iroise29', 'MediTech', 3306);
 
-
-// Connexion à la base de données
-$cnxBDD = new mysqli('localhost', 'user', 'root', 'MediTech', 3306);
-
-// Vérifier la connexion
 if ($cnxBDD->connect_error) {
     die("Échec de la connexion à la base de données : " . $cnxBDD->connect_error);
 }
 
-// Échapper les données pour éviter les injections SQL (s'il y a des variables à échapper)
 $nom = $cnxBDD->real_escape_string($nom);
 $prenom = $cnxBDD->real_escape_string($prenom);
-$date = $cnxBDD->real_escape_string($date);
 
-// Écrire la requête SQL pour sélectionner les données dans la base de données
-$requete = "SELECT nom, prenom FROM visiteur";
+$requete = "SELECT nom, prenom, date FROM visiteur";
 
-// Exécuter la requête SQL
 $resultat = $cnxBDD->query($requete);
 
-// Vérifier la réussite de la requête
 if (!$resultat) {
     die("Échec de la requête : " . $cnxBDD->error);
 }
 
-// Afficher les résultats de la requête
 while ($ligne = $resultat->fetch_assoc()) {
     echo "Nom : " . $ligne['nom'] . "<br>";
     echo "Prénom : " . $ligne['prenom'] . "<br>";
-    // Ajoutez d'autres champs selon votre schéma de base de données
+    echo "Date : " . $ligne['date'] . "<br>";
     echo "<br>";
 }
 
-// Fermer le résultat
 $resultat->free_result();
 
-// Fermer la connexion à la base de données
 $cnxBDD->close();
 ?>
