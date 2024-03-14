@@ -7,14 +7,14 @@ $nom_table = "visiteur";
 $numero_port = 3306;
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    $nom = $_GET["nom"];
-    $prenom = $_GET["prenom"];
-    $adresse = $_GET["adresse"];
-    $ville = $_GET["ville"];
-    $cp = $_GET["cp"];
-    $date_embauche = $_GET["date"];
-    $login = $_GET["login"];
-    $mdp = $_GET["mdp"];
+    $nom = $_GET["VIS_NOM"];
+    $prenom = $_GET["VIS_PRENOM"];
+    $adresse = $_GET["VIS_ADRESSE"];
+    $ville = $_GET["VIS_VILLE"];
+    $cp = $_GET["VIS_CP"];
+    $date_embauche = $_GET["VIS_DATE_EMBAUCHE"];
+   // $login = $_GET["login"];
+   // $mdp = $_GET["mdp"];
 
     $connexion = mysqli_connect($serveur, $utilisateur, $mot_de_passe, $nom_base_de_donnees);
 
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         die("Échec de la connexion : " . mysqli_connect_error());
     }
 
-    $requete = "INSERT INTO $nom_table (nom, prenom, adresse, ville, cp, date_embauche, login, mdp) VALUES ('$nom', '$prenom', '$adresse', '$ville', '$cp', '$date_embauche', '$login', '$mdp')";
+    $requete = "INSERT INTO $nom_table (VIS_NOM, VIS_PRENOM, VIS_ADRESSE, VIS_VILLE, VIS_CP, VIS_DATE_EMBAUCHE) VALUES ('$nom', '$prenom', '$adresse', '$ville', '$cp', '$date_embauche')";
 
     if (mysqli_query($connexion, $requete)) {
         echo "Utilisateur ajouté avec succès.";
