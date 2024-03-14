@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestion des Frais</title>
+    <style>
+        body {
+            background: linear-gradient(to right, lightblue, white);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .title {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .section {
+            margin-bottom: 1em;
+        }
+        .section-title {
+            font-weight: bold;
+        }
+        .input-field {
+            width: 10%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+        }
+
+        .input-field2 {
+            width: 10%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+        }
+
+        .submit-button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 2em auto;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            text-align: left;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Gestion des Frais</div>
+        <div class="section">
+            <div class="section-title">Saisie</div>
+            <label for="month">Mois (2 chiffres)</label>
+            <input type="text" id="month" name="month" class="input-field">
+            <label for="year">Année (4 chiffres)</label>
+            <input type="text" id="year" name="year" class="input-field">
+        </div>
+                <div class="container2">
+                <div class="section">
+                    <div class="box">text de test </div>
+                    <div class="section-title">Frais au forfait</div>
+                    <label for="meal">Repas midi</label>
+                    <input type="text" id="meal" name="meal" class="input-field">
+                    <br>
+                    <label for="nights">Nuitées</label>
+                    <input type="text" id="nights" name="nights" class="input-field">
+                    <br>
+                    <label for="step">Étape</label>
+                    <input type="text" id="step" name="step" class="input-field">
+                    <br>
+                    <label for="km">Km</label>
+                    <input type="text" id="km" name="km" class="input-field">
+                </div>
+            </div>
+        </body>
+        </html>
+        
+
+        <button class="submit-button">Soumettre la requête</button>
+    </div>
+</body>
+</html>
