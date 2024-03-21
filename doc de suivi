@@ -29,13 +29,14 @@
 - Ajouts d'éléments à la documentation générale
 
 14/03/24
-- Ajouts les actions PHP (Ajouter, Modifier, Supprimer) des utilisateurs
+- Ajouts des actions PHP (Ajouter, Modifier, Supprimer) des utilisateurs
 - Mise en correspondance des manières de développement
 
 21/03/24
-- Ajouts les actions PHP (Ajouteer, Modifier, Supprimer) des utilisateurs
+- Ajouts des actions PHP (Ajouter, Modifier, Supprimer) des utilisateurs
 - Mise en correspondance des manières de développement
-- 
+- Transferts des IHM et des fichiers sur le serveur FTP
+- Test de divers codes
 
 28/03/24
 
