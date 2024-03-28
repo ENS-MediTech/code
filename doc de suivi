@@ -2,7 +2,7 @@
 - Réglage de la base de données
 - Étude du dossier GSB
 - Test de la table visiteur avec le générateur
-- Début du développement des interaces IHM
+- Début du développement des interFaces IHM
 - Création de la documentation générale
 
 25/01/2024
@@ -36,10 +36,11 @@
 - Ajouts des actions PHP (Ajouter, Modifier, Supprimer) des utilisateurs
 - Mise en correspondance des manières de développement
 - Transferts des IHM et des fichiers sur le serveur FTP
-- Test de divers codes
+- Test de différents codes
 
 28/03/24
-
+- Ajouts des actions PHP (Ajouter, Modifier, Supprimer) des utilisateurs
+- Mise en correspondance des manières de développement
 
 04/04/24
 
