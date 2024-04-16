@@ -7,7 +7,7 @@ $nom_table = "visiteur";
 $numero_port = 3306;
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    $id = $_GET["id"];
+    $id = $_GET["VIS_ID"];
 
     $connexion = mysqli_connect($serveur, $utilisateur, $mot_de_passe, $nom_base_de_donnees);
 
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         die("Échec de la connexion : " . mysqli_connect_error());
     }
 
-    $requete = "DELETE FROM $nom_table WHERE id = $id";
+    $requete = "DELETE FROM $nom_table WHERE VIS_ID = $id";
 
     if (mysqli_query($connexion, $requete)) {
         echo "Utilisateur supprimé avec succès.";
